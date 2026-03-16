@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Càngaay Li — Un Retour Dans La Dignité</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --mg: #A8336A; --mgd: #7A2250; --mgp: #5C1A3D; --mgl: #C4527F;
+  --cr: #FAF6F0; --crw: #F2EAE0; --pa: #E8DCCF;
+  --ink: #1C1209; --inks: #3D2B1F; --go: #C9A96E; --gol: #E2C99A; --wh: #FFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Crimson Pro',Georgia,serif;background:var(--cr);color:var(--ink);overflow-x:hidden}
+
+/* BANNER */
+.banner{background:var(--mgp);color:var(--gol);padding:10px 20px;font-family:'Crimson Pro',serif;font-size:.88rem;letter-spacing:.06em;position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.banner span{opacity:.85}
+.bbtns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.bbtn{display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:2px;font-family:'Crimson Pro',serif;font-size:.82rem;font-weight:600;letter-spacing:.05em;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:all .25s}
+.b-rib{background:var(--go);color:var(--mgp)}.b-rib:hover{background:var(--gol)}
+.b-pp{background:transparent;color:var(--gol);border-color:var(--gol)}.b-pp:hover{background:rgba(201,169,110,.15)}
+.b-mob{background:transparent;color:#7ECFC0;border-color:#7ECFC0}.b-mob:hover{background:rgba(126,207,192,.15)}
+
+/* NAV */
+nav{background:var(--cr);border-bottom:1px solid var(--pa);padding:13px 60px;display:flex;align-items:center;justify-content:space-between}
+.nlogo{text-decoration:none}
+.nlogo-wrap{display:flex;align-items:center;gap:12px}
+.nlogo img{height:52px;width:auto}
+.nlt{display:flex;flex-direction:column;align-items:flex-start}
+.nlt .nm{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--mg);line-height:1;margin-bottom:3px}
+.nlt .tg{font-family:'Crimson Pro',serif;font-size:.68rem;color:var(--mgd);letter-spacing:.12em;font-style:italic;opacity:.75}
+.nlinks{display:flex;gap:26px;list-style:none}
+.nlinks a{font-family:'Crimson Pro',serif;font-size:.98rem;color:var(--inks);text-decoration:none;letter-spacing:.04em;transition:color .2s;position:relative}
+.nlinks a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--mg);transition:width .3s}
+.nlinks a:hover{color:var(--mg)}.nlinks a:hover::after{width:100%}
+
+/* HERO */
+.hero{min-height:92vh;background:var(--mgp);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hpat{position:absolute;inset:0;opacity:.07;background-image:radial-gradient(circle at 20% 50%,var(--go) 0%,transparent 50%),radial-gradient(circle at 80% 20%,var(--mgl) 0%,transparent 40%),url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9A96E' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")}
+.hcont{position:relative;z-index:2;text-align:center;max-width:820px;padding:55px 40px;animation:hfi 1.4s ease both}
+@keyframes hfi{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hlogo{width:145px;height:auto;margin:0 auto 22px;display:block;filter:drop-shadow(0 4px 20px rgba(0,0,0,.35))}
+.harab{font-family:'Scheherazade New',serif;font-size:1.85rem;color:var(--gol);opacity:.7;margin-bottom:16px}
+.htitle{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:300;color:var(--wh);line-height:.95;margin-bottom:14px}
+.htitle em{font-style:italic;color:var(--gol)}
+.hsubt{font-family:'Crimson Pro',serif;font-size:1.05rem;color:var(--pa);letter-spacing:.22em;text-transform:uppercase;margin-bottom:30px;opacity:.85}
+.hdiv{width:52px;height:1px;background:var(--go);margin:0 auto 28px}
+.hdesc{font-family:'Crimson Pro',serif;font-size:1.2rem;color:var(--crw);line-height:1.78;max-width:600px;margin:0 auto 40px;font-weight:300}
+.hcta{display:inline-flex;align-items:center;gap:9px;background:var(--go);color:var(--mgp);font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:600;letter-spacing:.1em;padding:13px 34px;text-decoration:none;border-radius:2px;transition:all .3s}
+.hcta:hover{background:var(--gol);transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
+.hscroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);color:var(--gol);opacity:.42;font-size:.7rem;letter-spacing:.15em;animation:sb 2s ease-in-out infinite}
+@keyframes sb{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+/* MISSION STRIP */
+.mstrip{background:var(--mg);padding:22px 60px;display:flex;align-items:center;justify-content:center;gap:30px;flex-wrap:wrap}
+.mpill{display:flex;align-items:center;gap:10px;color:var(--cr)}
+.mpill .ic{width:28px;height:28px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.mpill span{font-family:'Crimson Pro',serif;font-size:.88rem;letter-spacing:.06em;opacity:.9}
+.msep{width:1px;height:24px;background:rgba(255,255,255,.25)}
+
+/* COMMON */
+.sl{font-family:'Crimson Pro',serif;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--mg);margin-bottom:10px}
+.st{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4.2vw,3.1rem);font-weight:400;color:var(--ink);line-height:1.1;margin-bottom:18px}
+.st em{font-style:italic;color:var(--mg)}
+.gr{width:46px;height:2px;background:var(--go);margin-bottom:26px}
+.sb{font-size:1.1rem;line-height:1.85;color:var(--inks);font-weight:300;margin-bottom:18px}
+
+/* ABOUT */
+.about-sec{padding:88px 60px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center;max-width:1200px;margin:0 auto}
+.avis{position:relative}
+.alogoc{background:var(--mgp);border-radius:6px;padding:52px;display:flex;align-items:center;justify-content:center;aspect-ratio:1;max-width:400px;position:relative;overflow:hidden}
+.alogoc::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(201,169,110,.15) 0%,transparent 60%)}
+.alogoc img{width:100%;max-width:260px;position:relative;z-index:1}
+.abadge{position:absolute;bottom:-14px;right:-14px;background:var(--go);color:var(--mgp);padding:12px 18px;font-family:'Cormorant Garamond',serif;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:2px}
+
+/* OBJECTIFS */
+.obj-sec{background:var(--mgp);padding:88px 60px}
+.obj-inner{max-width:1200px;margin:0 auto}
+.obj-head{margin-bottom:48px}
+.obj-head .sl{color:var(--go)}
+.obj-head .st{color:var(--cr)}
+.obj-head .st em{color:var(--gol)}
+.obj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ocard{background:rgba(255,255,255,.05);padding:34px 26px;border-top:2px solid rgba(201,169,110,.22);transition:all .3s}
+.ocard:hover{background:rgba(255,255,255,.09);border-top-color:var(--go)}
+.ocard:nth-child(4){grid-column:1 / span 1}
+.ocard:last-child{grid-column:2 / span 2}
+.onum{font-family:'Cormorant Garamond',serif;font-size:3.2rem;font-weight:300;color:rgba(201,169,110,.16);line-height:1;margin-bottom:10px}
+.otitle{font-family:'Cormorant Garamond',serif;font-size:1.28rem;font-weight:500;color:var(--gol);margin-bottom:9px}
+.odesc{font-family:'Crimson Pro',serif;font-size:.97rem;color:var(--pa);line-height:1.72;font-weight:300;opacity:.85}
+
+/* FOUNDER */
+.founder{background:var(--mgd);padding:88px 60px;position:relative;overflow:hidden}
+.founder::before{content:'C';position:absolute;top:-40px;left:40px;font-family:'Cormorant Garamond',serif;font-size:26rem;color:rgba(201,169,110,.04);line-height:1;pointer-events:none}
+.founder-in{max-width:860px;margin:0 auto;position:relative;z-index:1}
+.flabel{font-family:'Crimson Pro',serif;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--go);margin-bottom:32px}
+.fquote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.45rem,3vw,2.2rem);font-weight:300;font-style:italic;color:var(--cr);line-height:1.55;margin-bottom:40px}
+.fquote strong{font-style:normal;font-weight:500;color:var(--gol)}
+.fsig{display:flex;align-items:center;gap:16px}
+.fsig-line{width:32px;height:1px;background:var(--go)}
+.fsig-txt{font-family:'Crimson Pro',serif;color:var(--pa);font-size:.95rem;letter-spacing:.07em}
+.fsig-txt strong{display:block;color:var(--gol);font-size:1.02rem}
+
+/* PACK */
+.pack-sec{background:var(--cr);padding:88px 60px}
+.pack-inner{max-width:1200px;margin:0 auto}
+.pack-layout{display:grid;grid-template-columns:1fr 1fr;gap:66px;align-items:center;margin-top:38px}
+.pimgwrap{position:relative;border-radius:6px;overflow:hidden;box-shadow:0 26px 65px rgba(90,20,50,.18)}
+.pimgwrap img{width:100%;display:block;border-radius:6px}
+.pimlabel{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(92,26,61,.92) 0%,transparent 100%);padding:28px 24px 18px}
+.pimlabel span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--cr);font-style:italic}
+.pcard{background:var(--crw);border:1px solid var(--pa);border-left:5px solid var(--mg);padding:28px 26px;border-radius:2px}
+.pcard-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.pname{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;color:var(--mgd)}
+.pprice{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--go)}
+.pdesc{font-family:'Crimson Pro',serif;font-size:1.03rem;color:var(--inks);line-height:1.75;font-weight:300;margin-bottom:16px}
+.ptags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px}
+.ptag{background:var(--mgp);color:var(--gol);font-family:'Crimson Pro',serif;font-size:.7rem;letter-spacing:.1em;padding:4px 11px;border-radius:20px}
+.pcta-row{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+.pcta{display:inline-flex;align-items:center;gap:7px;background:var(--mg);color:white;font-family:'Cormorant Garamond',serif;font-size:1.03rem;font-weight:600;letter-spacing:.08em;padding:12px 26px;text-decoration:none;border-radius:2px;transition:all .3s}
+.pcta:hover{background:var(--mgd);transform:translateY(-2px);box-shadow:0 8px 20px rgba(90,20,50,.25)}
+.pcta-note{font-family:'Crimson Pro',serif;font-size:.88rem;color:var(--inks);opacity:.6;font-style:italic}
+
+/* ARTICLES */
+.art-sec{background:var(--pa);padding:88px 60px}
+.art-head{max-width:1200px;margin:0 auto 48px;display:flex;align-items:flex-end;justify-content:space-between;gap:36px;flex-wrap:wrap}
+.see-all{font-family:'Crimson Pro',serif;font-size:.96rem;color:var(--mg);text-decoration:none;border-bottom:1px solid var(--mg);padding-bottom:2px;transition:opacity .2s;white-space:nowrap}
+.see-all:hover{opacity:.7}
+.art-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+.acard{background:var(--cr);border-radius:2px;overflow:hidden;transition:transform .3s,box-shadow .3s;cursor:pointer;color:inherit}
+.acard:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(90,20,50,.1)}
+.acard.feat{background:var(--mgp);display:flex;flex-direction:column}
+.aimg{height:180px;background:var(--mg);display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative;overflow:hidden}
+.acard.feat .aimg{height:220px;background:var(--mgd)}
+.apat{position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,255,255,.03) 10px,rgba(255,255,255,.03) 20px)}
+.abody{padding:22px 18px}
+.acard.feat .abody{flex:1}
+.atag{font-family:'Crimson Pro',serif;font-size:.67rem;letter-spacing:.2em;text-transform:uppercase;color:var(--go);margin-bottom:8px}
+.acard:not(.feat) .atag{color:var(--mg)}
+.atitle{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;color:var(--ink);line-height:1.3;margin-bottom:8px}
+.acard.feat .atitle{font-size:1.5rem;color:var(--cr)}
+.aexcerpt{font-family:'Crimson Pro',serif;font-size:.94rem;color:var(--inks);line-height:1.65;font-weight:300}
+.acard.feat .aexcerpt{color:var(--pa);opacity:.8}
+.amore{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-family:'Crimson Pro',serif;font-size:.84rem;color:var(--go);letter-spacing:.05em}
+.acard:not(.feat) .amore{color:var(--mg)}
+
+/* DONATE */
+.don-sec{background:var(--crw);padding:88px 60px}
+.don-inner{max-width:1020px;margin:0 auto;text-align:center}
+.don-inner .sl{text-align:center}
+.don-inner .gr{margin:0 auto 26px}
+.don-desc{font-family:'Crimson Pro',serif;font-size:1.16rem;line-height:1.82;color:var(--inks);font-weight:300;max-width:640px;margin:0 auto 42px}
+.don-opts{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-bottom:40px}
+.dopt{background:var(--cr);border:1px solid var(--pa);padding:28px 18px;border-radius:3px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:all .3s;cursor:pointer}
+.dopt:hover{border-color:var(--mgl);box-shadow:0 10px 26px rgba(90,20,50,.1);transform:translateY(-4px)}
+.dicon{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.dname{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600;color:var(--ink)}
+.ddesc{font-family:'Crimson Pro',serif;font-size:.84rem;color:var(--inks);text-align:center;opacity:.68;line-height:1.5}
+.dbtn{margin-top:auto;padding:7px 17px;border-radius:2px;font-family:'Crimson Pro',serif;font-size:.84rem;font-weight:600;letter-spacing:.06em;border:none;cursor:pointer}
+.pdetail{font-family:'Crimson Pro',serif;font-size:1rem;font-weight:600;color:var(--mgd);letter-spacing:.04em}
+.rib-det{border-top:1px solid var(--pa);padding-top:12px;margin-top:4px;width:100%}
+.rrow{display:flex;justify-content:space-between;gap:8px;margin-bottom:6px;align-items:flex-start}
+.rlbl{font-family:'Crimson Pro',serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--inks);opacity:.52;white-space:nowrap;padding-top:2px}
+.rval{font-family:'Crimson Pro',serif;font-size:.9rem;color:var(--ink);font-weight:600;letter-spacing:.04em;text-align:right;word-break:break-all}
+.cbtn{margin-top:8px;width:100%;padding:7px;background:var(--mgp);color:var(--gol);border:none;cursor:pointer;font-family:'Crimson Pro',serif;font-size:.84rem;border-radius:2px;transition:background .2s}
+.cbtn:hover{background:var(--mg)}
+.rib-btn{background:var(--mgp);color:var(--gol)}
+.pp-btn{background:#003087;color:white}
+.or-btn{background:#FF6600;color:white}
+.wv-btn{background:#1AB9E8;color:white}
+.dnote{font-family:'Crimson Pro',serif;font-size:.84rem;color:var(--inks);opacity:.5;letter-spacing:.04em}
+
+/* NEWSLETTER */
+.nws{background:var(--mg);padding:60px 60px}
+.nws-in{max-width:640px;margin:0 auto;text-align:center}
+.nws h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:var(--wh);margin-bottom:8px}
+.nws p{font-family:'Crimson Pro',serif;color:var(--crw);opacity:.85;margin-bottom:26px;font-size:.98rem}
+.nws-form{display:flex;max-width:440px;margin:0 auto}
+.nws-form input{flex:1;padding:12px 15px;border:none;background:rgba(255,255,255,.15);color:white;font-family:'Crimson Pro',serif;font-size:.98rem;outline:none;border:1px solid rgba(255,255,255,.3);border-right:none}
+.nws-form input::placeholder{color:rgba(255,255,255,.5)}
+.nws-form button{padding:12px 22px;background:var(--go);color:var(--mgp);border:none;cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;letter-spacing:.06em;transition:background .2s}
+.nws-form button:hover{background:var(--gol)}
+
+/* FOOTER */
+footer{background:var(--ink);padding:50px 60px 24px;color:var(--pa)}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:38px}
+.fbrand .nm{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:var(--gol);margin-bottom:4px}
+.fbrand .tg{font-family:'Crimson Pro',serif;font-size:.78rem;color:var(--pa);letter-spacing:.15em;opacity:.5;font-style:italic;margin-bottom:14px}
+.fbrand p{font-family:'Crimson Pro',serif;font-size:.88rem;line-height:1.7;opacity:.5}
+.fcol h4{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gol);margin-bottom:14px;letter-spacing:.05em}
+.fcol ul{list-style:none}
+.fcol ul li{margin-bottom:7px}
+.fcol ul li a{font-family:'Crimson Pro',serif;font-size:.88rem;color:var(--pa);text-decoration:none;opacity:.5;transition:opacity .2s}
+.fcol ul li a:hover{opacity:1}
+.fbot{border-top:1px solid rgba(255,255,255,.07);padding-top:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.fbot p{font-family:'Crimson Pro',serif;font-size:.78rem;opacity:.3}
+.farab{font-family:'Scheherazade New',serif;font-size:1rem;color:var(--gol);opacity:.3}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:12px 16px}.nlinks{display:none}
+  .about-sec,.svc-sec,.art-sec,.don-sec,.pack-sec,.obj-sec,.founder,.nws{padding:58px 16px}
+  .about,.pack-layout{grid-template-columns:1fr;gap:30px}
+  .alogoc{max-width:100%}
+  .svc-grid,.art-grid,.don-opts,.obj-grid{grid-template-columns:1fr}
+  .ocard:last-child{grid-column:auto}
+  .fgrid{grid-template-columns:1fr;gap:28px}
+  footer{padding:38px 16px 18px}
+  .mstrip{padding:14px 16px;gap:10px}.msep{display:none}
+  .nws-form{flex-direction:column}
+  .nws-form input{border-right:1px solid rgba(255,255,255,.3)}
+}
+
+/* ANIMATIONS */
+.fu{opacity:1;transform:none}
+.js-ready .fu{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.js-ready .fu.vis{opacity:1;transform:none}
+</style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- BANNER -->
+<div class="banner">
+  <span>Soutenez notre mission — aidez-nous à former plus de femmes à la préparation funéraire islamique</span>
+  <div class="bbtns">
+    <a href="#donate" class="bbtn b-rib">RIB / Virement</a>
+    <a href="#donate" class="bbtn b-pp">PayPal</a>
+    <a href="#donate" class="bbtn b-mob">Wave · Orange Money</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nlogo">
+    <div class="nlogo-wrap">
+      <img src="images/logo.png" alt="Càngaay Li"/>
+      <div class="nlt">
+        <span class="nm">Càngaay Li</span>
+        <span class="tg">Un Retour Dans La Dignité</span>
+      </div>
+    </div>
+  </a>
+  <ul class="nlinks">
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#objectifs">Nos Objectifs</a></li>
+    <li><a href="#founder">La Fondatrice</a></li>
+    <li><a href="#pack">Notre Pack</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#donate">Faire un don</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hpat"></div>
+  <div class="hcont">
+    <img src="images/logo.png" alt="Càngaay Li" class="hlogo"/>
+    <div class="harab">&#1576;&#1616;&#1587;&#1618;&#1605;&#1616; &#1575;&#1604;&#1604;&#1607;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1618;&#1605;&#1614;&#1606;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1616;&#1610;&#1618;&#1605;&#1616;</div>
+    <h1 class="htitle">Càngaay<br><em>Li</em></h1>
+    <p class="hsubt">Un Retour Dans La Dignité</p>
+    <div class="hdiv"></div>
+    <p class="hdesc">Former les femmes musulmanes au lavage et à la préparation funéraire islamique, pour que chaque sœur parte dans la dignité, entourée de mains bienveillantes et de cœurs pieux.</p>
+    <a href="#mission" class="hcta">Découvrir notre mission</a>
+  </div>
+  <div class="hscroll">&#8595;</div>
+</section>
+
+<!-- MISSION STRIP -->
+<div class="mstrip">
+  <div class="mpill"><div class="ic">&#128205;</div><span>Basée à Thiès, Sénégal</span></div>
+  <div class="msep"></div>
+  <div class="mpill"><div class="ic">&#129309;</div><span>Organisation à but non lucratif</span></div>
+  <div class="msep"></div>
+  <div class="mpill"><div class="ic">&#127979;</div><span>Formation aux rites funéraires</span></div>
+  <div class="msep"></div>
+  <div class="mpill"><div class="ic">&#128214;</div><span>Conformité avec le Qur'an et la Sunnah</span></div>
+</div>
+
+<!-- ABOUT / MISSION -->
+<section id="mission" class="about-sec">
+  <div class="about">
+    <div class="avis fu">
+      <div class="alogoc">
+        <img src="images/logo.png" alt="Logo Càngaay Li"/>
+      </div>
+      <div class="abadge">Thiès, Sénégal · 2024</div>
+    </div>
+    <div class="fu">
+      <p class="sl">Notre Mission</p>
+      <h2 class="st">Redonner à nos mères et sœurs <em>un départ digne</em></h2>
+      <div class="gr"></div>
+      <p class="sb">Dans beaucoup de nos communautés, les savoirs traditionnels du lavage mortuaire islamique se perdent. Les femmes qui s'éteignent méritent d'être préparées par des mains formées, guidées par la connaissance et empreintes de douceur.</p>
+      <p class="sb"><strong>Càngaay Li</strong> signifie "La Préparation" en wolof. C'est un institut prive a but non lucratif basé à Thiès, qui forme les femmes musulmanes au <em>ghusl</em> (lavage rituel), à la mise en linceul (<em>kafan</em>), et a l'ensemble des rites funéraires islamiques selon la Sunna.</p>
+      <p class="sb">Notre vision : que dans chaque quartier, chaque village du Sénégal, il y ait une femme compétente, sereine et prête à accomplir cette noble tâche.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIFS -->
+<div class="obj-sec" id="objectifs">
+  <div class="obj-inner">
+    <div class="obj-head fu">
+      <p class="sl">Nos Objectifs</p>
+      <h2 class="st">Ce que nous <em>voulons accomplir</em></h2>
+      <div class="gr"></div>
+    </div>
+    <div class="obj-grid">
+      <div class="ocard fu">
+        <div class="onum">01</div>
+        <h3 class="otitle">Former gratuitement</h3>
+        <p class="odesc">Former gratuitement des femmes au lavage mortuaire islamique, selon le Coran et la Sunnah, afin que ce savoir soit accessible à toutes, indépendamment de leurs moyens.</p>
+      </div>
+      <div class="ocard fu">
+        <div class="onum">02</div>
+        <h3 class="otitle">Préserver la dignité</h3>
+        <p class="odesc">Préserver la dignité du défunt en veillant à ce que chaque rite funéraire soit accompli avec soin, respect et conformité aux enseignements de l'islam.</p>
+      </div>
+      <div class="ocard fu">
+        <div class="onum">03</div>
+        <h3 class="otitle">Transmettre un savoir sacré</h3>
+        <p class="odesc">Transmettre un savoir sacré de génération en génération, pour que les pratiques funéraires islamiques ne se perdent jamais dans nos communautés.</p>
+      </div>
+      <div class="ocard fu">
+        <div class="onum">04</div>
+        <h3 class="otitle">Créer un réseau de laveuses</h3>
+        <p class="odesc">Créer un réseau de laveuses formées à travers tout le Sénégal, pour qu'aucune famille ne soit démunie face à la mort faute de personne compétente à ses côtés.</p>
+      </div>
+      <div class="ocard fu">
+        <div class="onum">05</div>
+        <h3 class="otitle">Accompagner les familles</h3>
+        <p class="odesc">Accompagner les familles endeuillées avec bienveillance, leur offrir un soutien humain et spirituel dans les moments les plus douloureux de leur vie.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOUNDER -->
+<div class="founder" id="founder">
+  <div class="founder-in">
+    <p class="flabel">Mot de la Fondatrice</p>
+    <blockquote class="fquote">
+      "J'ai vu des femmes partir sans avoir été lavées correctement, par manque de formatrices, par peur, par ignorance. Ce jour-là, j'ai compris que <strong>former nos sœurs, c'est leur rendre leur dignité</strong>. C'est un acte d'amour, de foi et de responsabilité collective."
+    </blockquote>
+    <div class="fsig">
+      <div class="fsig-line"></div>
+      <div class="fsig-txt">
+        <strong>La Fondatrice de Càngaay Li</strong>
+        Éducatrice islamique · Thiès, Sénégal
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PACK -->
+<div class="pack-sec" id="pack">
+  <div class="pack-inner">
+    <p class="sl fu">Notre Pack</p>
+    <h2 class="st fu">Un kit essentiel pour <em>accompagner la défunte</em></h2>
+    <div class="gr fu"></div>
+    <p class="sb fu" style="max-width:700px;">Càngaay Li propose un pack de soins funéraires soigneusement préparé, contenant tout le nécessaire pour le lavage rituel et l'ensevelissement d'une femme musulmane, conformément à la Sunna. Ce kit est disponible à la commande pour les familles, les mosquées et les associations.</p>
+    <div class="pack-layout">
+      <div class="pimgwrap fu">
+        <img src="images/packs.jpg" alt="Pack Essentiel Càngaay Li"/>
+        <div class="pimlabel"><span>Chaque boîte, une promesse de dignité</span></div>
+      </div>
+      <div class="fu">
+        <div class="pcard">
+          <div class="pcard-hd">
+            <span class="pname">Pack Essentiel</span>
+            <span class="pprice">Sur devis</span>
+          </div>
+          <p class="pdesc">Tout le nécessaire pour un lavage rituel et un ensevelissement islamique complet selon la Sunna, soigneusement sélectionné pour les familles, les mosquées et les associations qui souhaitent être prêtes le moment venu.</p>
+          <div class="ptags">
+            <span class="ptag">Linceul (kafan)</span>
+            <span class="ptag">Savon de Sidr</span>
+            <span class="ptag">Camphre</span>
+            <span class="ptag">Gants</span>
+            <span class="ptag">Coton</span>
+            <span class="ptag">Encens</span>
+          </div>
+        </div>
+        <div class="pcta-row" style="margin-top:24px;">
+          <a href="/cdn-cgi/l/email-protection#c4a7abaab0a5a7b084a7a5aaa3a5a5bda8adeab7aafbb7b1a6aea1a7b0f987aba9a9a5aaa0a1e494a5a7afe481b7b7a1aab0ada1a8e487a5aaa3a5a5bde488ad" class="pcta">Commander le pack</a>
+          <span class="pcta-note">Réponse sous 48h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLES -->
+<div class="art-sec" id="articles">
+  <div class="art-head fu">
+    <div>
+      <p class="sl">Ressources et Réflexions</p>
+      <h2 class="st">Articles <em>et Enseignements</em></h2>
+      <div class="gr"></div>
+    </div>
+    <a href="blog.html" class="see-all">Voir tous les articles</a>
+  </div>
+  <div class="art-grid">
+    <a href="article-ghusl.html" style="text-decoration:none;display:flex;flex-direction:column;" class="acard feat fu">
+      <div class="aimg" style="background:var(--mgd);">
+        <div class="apat"></div>
+        <span>&#9789;</span>
+      </div>
+      <div class="abody">
+        <p class="atag">Dossier Principal</p>
+        <h3 class="atitle">Le Ghusl de la femme musulmane : guide complet selon la Sunna</h3>
+        <p class="aexcerpt">Un guide détaillé sur le lavage rituel mortuaire féminin : les étapes obligatoires, les actes recommandés, les erreurs courantes à éviter et les conseils pratiques pour celles qui se préparent à remplir cette mission sacrée.</p>
+        <span class="amore">Lire l'article</span>
+      </div>
+    </a>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <a href="article-peur-mort.html" style="text-decoration:none;" class="acard fu">
+        <div class="aimg" style="height:110px;background:#8B2B5E;font-size:1.7rem;"><div class="apat"></div><span>&#127769;</span></div>
+        <div class="abody">
+          <p class="atag">Rappel</p>
+          <h3 class="atitle" style="font-size:1rem;">Pourquoi la mort nous fait-elle peur ?</h3>
+          <p class="aexcerpt" style="font-size:.84rem;">Réflexion islamique sur notre rapport à la mort et comment la préparation funéraire peut transformer notre foi.</p>
+          <span class="amore" style="font-size:.8rem;">Lire</span>
+        </div>
+      </a>
+      <a href="article-temoignage.html" style="text-decoration:none;" class="acard fu">
+        <div class="aimg" style="height:110px;background:#9E3870;font-size:1.7rem;"><div class="apat"></div><span>&#127807;</span></div>
+        <div class="abody">
+          <p class="atag">Temoignage</p>
+          <h3 class="atitle" style="font-size:1rem;">Ce que j'ai appris en lavant ma mere</h3>
+          <p class="aexcerpt" style="font-size:.84rem;">Le témoignage bouleversant d'une diplômée de Càngaay Li sur l'expérience qui a changé sa vie.</p>
+          <span class="amore" style="font-size:.8rem;">Lire</span>
+        </div>
+      </a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <a href="article-kafan.html" style="text-decoration:none;" class="acard fu">
+        <div class="aimg" style="height:110px;background:#7A245A;font-size:1.7rem;"><div class="apat"></div><span>&#128331;</span></div>
+        <div class="abody">
+          <p class="atag">Rappel</p>
+          <h3 class="atitle" style="font-size:1rem;">Le kafan etape par etape</h3>
+          <p class="aexcerpt" style="font-size:.84rem;">Les différentes pratiques de mise en linceul à travers les madhabs et leurs recommandations.</p>
+          <span class="amore" style="font-size:.8rem;">Lire</span>
+        </div>
+      </a>
+      <a href="index.html#donate" style="text-decoration:none;" class="acard fu">
+        <div class="aimg" style="height:110px;background:#882F62;font-size:1.7rem;"><div class="apat"></div><span>&#128144;</span></div>
+        <div class="abody">
+          <p class="atag">Communaute</p>
+          <h3 class="atitle" style="font-size:1rem;">Former 100 femmes d'ici 2026 : notre défi</h3>
+          <p class="aexcerpt" style="font-size:.84rem;">Comment votre don permet de financer la formation de nouvelles femmes dans tout le Sénégal.</p>
+          <span class="amore" style="font-size:.8rem;">Lire</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- DONATE -->
+<div class="don-sec" id="donate">
+  <div class="don-inner">
+    <p class="sl">Faire un don</p>
+    <h2 class="st">Soutenez <em>Càngaay Li</em></h2>
+    <div class="gr"></div>
+    <p class="don-desc">Chaque don contribue à former une nouvelle femme, à imprimer des supports pédagogiques et à organiser des ateliers dans les quartiers et les villages. Votre soutien est un <em>sadaqa jariya</em>, une aumône continue qui profite à toute la communauté.</p>
+    <div class="don-opts">
+
+      <div class="dopt fu" onclick="toggleRib()">
+        <div class="dicon" style="background:#f0f0f8;border-radius:8px;">
+          <img src="images/icon-rib.png" alt="Virement" style="width:36px;height:auto;"/>
+        </div>
+        <div class="dname">Virement Bancaire - RIB</div>
+        <div class="ddesc">Virement SEPA ou international depuis votre banque</div>
+        <span class="dbtn rib-btn">Voir le RIB</span>
+        <div class="rib-det" id="ribDetails" style="display:none;">
+          <div class="rrow"><span class="rlbl">IBAN</span><span class="rval" id="ibanVal">FR76 2823 3000 0156 9168 4776 695</span></div>
+          <div class="rrow"><span class="rlbl">Beneficiaire</span><span class="rval">Càngaay Li</span></div>
+          <div class="rrow"><span class="rlbl">Banque</span><span class="rval">Credit Mutuel</span></div>
+          <div class="rrow"><span class="rlbl">BIC/SWIFT</span><span class="rval">CMBRFR2BXXX</span></div>
+          <button class="cbtn" onclick="copyIban(event)">Copier l'IBAN</button>
+        </div>
+      </div>
+
+      <a href="https://www.paypal.com/paypalme/cangaayli" target="_blank" class="dopt fu">
+        <div class="dicon" style="background:#ffffff;border-radius:8px;border:1px solid #e0e0e0;padding:6px;">
+          <img src="images/icon-paypal.png" alt="PayPal" style="width:34px;height:auto;"/>
+        </div>
+        <div class="dname">PayPal</div>
+        <div class="ddesc">Envoyez un don a <strong><span class="__cf_email__" data-cfemail="6b080a050c0a0a1207022b0c060a020745080406">[email&#160;protected]</span></strong></div>
+        <div class="pdetail"><span class="__cf_email__" data-cfemail="3e5d5f50595f5f4752577e59535f5752105d5153">[email&#160;protected]</span></div>
+        <span class="dbtn pp-btn">Donner via PayPal</span>
+      </a>
+
+      <div class="dopt fu">
+        <div class="dicon" style="background:#fff4ee;border-radius:8px;padding:6px;">
+          <img src="images/icon-orange.png" alt="Orange Money" style="width:44px;height:auto;"/>
+        </div>
+        <div class="dname">Orange Money</div>
+        <div class="ddesc">Envoyez votre don au numero ci-dessous</div>
+        <div class="pdetail">+221 78 436 43 58</div>
+        <button class="dbtn or-btn" onclick="copyText('+221784364358',this)">Copier le numero</button>
+      </div>
+
+      <div class="dopt fu">
+        <div class="dicon">
+          <img src="images/icon-wave.png" alt="Wave" style="width:46px;height:auto;border-radius:50%;"/>
+        </div>
+        <div class="dname">Wave</div>
+        <div class="ddesc">Transfert instantane via Wave depuis votre telephone</div>
+        <div class="pdetail">+221 76 728 35 18</div>
+        <button class="dbtn wv-btn" onclick="copyText('+221767283518',this)">Copier le numero</button>
+      </div>
+
+    </div>
+    <p class="dnote">Tous les dons sont sécurisés. Càngaay Li est une organisation à but non lucratif enregistrée au Sénégal.</p>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="nws">
+  <div class="nws-in">
+    <h3>Restez Informée</h3>
+    <p>Recevez nos articles, annonces de formation et nouvelles de la communauté directement dans votre boîte mail.</p>
+    <div class="nws-form">
+      <input type="email" placeholder="Votre adresse e-mail"/>
+      <button type="button">S'inscrire</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="nm">Càngaay Li</div>
+      <div class="tg">Un Retour Dans La Dignité</div>
+      <p>Institut privé de formation au rite funéraire islamique pour les femmes. Organisation à but non lucratif · Thiès, Sénégal.</p>
+    </div>
+    <div class="fcol">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#mission">Notre Mission</a></li>
+        <li><a href="#objectifs">Nos Objectifs</a></li>
+        <li><a href="#founder">La Fondatrice</a></li>
+        <li><a href="#pack">Notre Pack</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#donate">Faire un don</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="/cdn-cgi/l/email-protection#75161a1b011416013516141b1214140c191c5b061b"><span class="__cf_email__" data-cfemail="c0a3afaeb4a1a3b480a3a1aea7a1a1b9aca9eeb3ae">[email&#160;protected]</span></a></li>
+        <li><a href="#">Thies, Senegal</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#98fbf9f6fff9f9e1f4f1d8fff5f9f1f4b6fbf7f5"><span class="__cf_email__" data-cfemail="781b19161f1919011411381f15191114561b1715">[email&#160;protected]</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2024 Càngaay Li. Tous droits réservés. Organisation à but non lucratif.</p>
+    <span class="farab">&#1573;&#1616;&#1606;&#1617;&#1614;&#1575; &#1604;&#1616;&#1604;&#1617;&#1614;&#1607;&#1616; &#1608;&#1614;&#1573;&#1616;&#1606;&#1617;&#1614;&#1575; &#1573;&#1616;&#1604;&#1614;&#1610;&#1618;&#1607;&#1616; &#1585;&#1614;&#1575;&#1580;&#1616;&#1593;&#1615;&#1608;&#1606;&#1614;</span>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+document.body.classList.add("js-ready");
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('vis'),80); obs.unobserve(e.target); }
+  });
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+function toggleRib(){
+  const el=document.getElementById('ribDetails');
+  const btn=document.querySelector('.rib-btn');
+  const open=el.style.display==='none';
+  el.style.display=open?'block':'none';
+  btn.textContent=open?'Masquer le RIB':'Voir le RIB';
+}
+function copyIban(e){
+  e.stopPropagation();
+  navigator.clipboard.writeText(document.getElementById('ibanVal').textContent).then(()=>{
+    const btn=e.target;const orig=btn.textContent;
+    btn.textContent='Copie !';btn.style.background='#2a7a60';
+    setTimeout(()=>{btn.textContent=orig;btn.style.background='

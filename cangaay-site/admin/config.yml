@@ -1,0 +1,80 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+locale: fr
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "_articles"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "blog.html"
+    summary: "{{title}} — {{date}}"
+    fields:
+      - label: "Titre"
+        name: "title"
+        widget: "string"
+        hint: "Le titre complet de l'article"
+
+      - label: "Tag / Catégorie"
+        name: "tag"
+        widget: "select"
+        options:
+          - { label: "Dossier Principal", value: "Dossier Principal" }
+          - { label: "Rappel", value: "Rappel" }
+          - { label: "Témoignage", value: "Témoignage" }
+          - { label: "Communauté", value: "Communauté" }
+
+      - label: "Icône"
+        name: "icon"
+        widget: "select"
+        default: "📖"
+        options:
+          - { label: "📖  Livre — guide, dossier de référence", value: "📖" }
+          - { label: "🌙  Lune — rappel spirituel, réflexion", value: "🌙" }
+          - { label: "🌿  Feuille — témoignage, récit personnel", value: "🌿" }
+          - { label: "🤲  Mains — formation, transmission", value: "🤲" }
+          - { label: "☽   Croissant — rite islamique, sunna", value: "☽" }
+          - { label: "🕊️  Colombe — paix, deuil, accompagnement", value: "🕊️" }
+          - { label: "💌  Lettre — annonce, nouvelle, communauté", value: "💌" }
+          - { label: "🌸  Fleur — douceur, bienveillance", value: "🌸" }
+          - { label: "✨  Étoiles — article spécial, mise en avant", value: "✨" }
+          - { label: "🪷  Lotus — pureté, rituel, lavage", value: "🪷" }
+          - { label: "📜  Parchemin — texte coranique, hadith", value: "📜" }
+          - { label: "🌺  Hibiscus — femmes, communauté, Sénégal", value: "🌺" }
+
+      - label: "Résumé"
+        name: "excerpt"
+        widget: "text"
+        hint: "Une ou deux phrases résumant l'article (affiché sur la page blog)"
+
+      - label: "Date de publication"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+
+      - label: "Temps de lecture"
+        name: "readTime"
+        widget: "string"
+        default: "5 min"
+        hint: "Ex: 5 min, 8 min"
+
+      - label: "Publié"
+        name: "published"
+        widget: "boolean"
+        default: true
+        hint: "Décochez pour garder l'article en brouillon"
+
+      - label: "Contenu"
+        name: "body"
+        widget: "markdown"
+        hint: "Le contenu complet de l'article. Utilisez ## pour les titres, **gras**, *italique*."
