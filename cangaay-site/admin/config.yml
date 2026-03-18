@@ -10,8 +10,6 @@ public_folder: "images/uploads"
 
 locale: fr
 
-# Custom branding
-logo_url: https://unrivaled-raindrop-b4216b.netlify.app/images/logo.png
 
 collections:
   - name: "articles"
