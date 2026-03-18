@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Former 100 femmes d'ici 2026 - Càngaay Li</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--mg:#A8336A;--mgd:#7A2250;--mgp:#5C1A3D;--mgl:#C4527F;--cr:#FAF6F0;--crw:#F2EAE0;--pa:#E8DCCF;--ink:#1C1209;--inks:#3D2B1F;--go:#C9A96E;--gol:#E2C99A;--wh:#FFF}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Crimson Pro',Georgia,serif;background:var(--cr);color:var(--ink);overflow-x:hidden}
+nav{background:var(--cr);border-bottom:1px solid var(--pa);padding:13px 60px;display:flex;align-items:center;justify-content:space-between}
+.nlogo{text-decoration:none}
+.nlogo-wrap{display:flex;align-items:center;gap:12px}
+.nlogo img{height:48px;width:auto}
+.nlt{display:flex;flex-direction:column;align-items:flex-start}
+.nlt .nm{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--mg);line-height:1;margin-bottom:3px}
+.nlt .tg{font-family:'Crimson Pro',serif;font-size:.67rem;color:var(--mgd);letter-spacing:.12em;font-style:italic;opacity:.75}
+.back-btn{display:inline-flex;align-items:center;gap:8px;font-family:'Crimson Pro',serif;font-size:.95rem;color:var(--mgd);text-decoration:none;letter-spacing:.04em;opacity:.75;transition:opacity .2s}
+.back-btn:hover{opacity:1}
+.art-hero{background:var(--mgp);padding:70px 60px 56px;position:relative;overflow:hidden}
+.art-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(201,169,110,.08) 0%,transparent 60%)}
+.art-hero-inner{max-width:820px;margin:0 auto;position:relative;z-index:1}
+.art-tag{font-family:'Crimson Pro',serif;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--go);margin-bottom:16px}
+.art-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:400;color:var(--wh);line-height:1.1;margin-bottom:20px}
+.art-meta{font-family:'Crimson Pro',serif;font-size:.9rem;color:var(--pa);opacity:.65;letter-spacing:.06em}
+.art-divider{width:50px;height:2px;background:var(--go);margin:22px 0}
+.art-intro{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:300;font-style:italic;color:var(--crw);line-height:1.65;max-width:720px}
+.art-body{max-width:820px;margin:0 auto;padding:70px 60px}
+.art-body h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:500;color:var(--mgd);margin:44px 0 16px}
+.art-body h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:500;color:var(--mg);margin:30px 0 12px}
+.art-body p{font-family:'Crimson Pro',serif;font-size:1.12rem;line-height:1.88;color:var(--inks);font-weight:300;margin-bottom:20px}
+.art-body strong{font-weight:600;color:var(--ink)}
+.art-body em{font-style:italic;color:var(--mgd)}
+.art-body blockquote{border-left:3px solid var(--go);padding:18px 24px;background:var(--crw);margin:32px 0;font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--mgd);line-height:1.6}
+.art-body ul,ol{margin:0 0 20px 24px}
+.art-body li{font-family:'Crimson Pro',serif;font-size:1.08rem;line-height:1.8;color:var(--inks);font-weight:300;margin-bottom:6px}
+.step-box{background:var(--mgp);border-radius:4px;padding:28px 32px;margin:28px 0}
+.step-box h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gol);margin-bottom:10px;letter-spacing:.04em}
+.step-box p{font-family:'Crimson Pro',serif;font-size:1rem;color:var(--pa);line-height:1.75;font-weight:300;margin:0}
+.step-num{display:inline-block;background:var(--go);color:var(--mgp);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.85rem;width:28px;height:28px;border-radius:50%;text-align:center;line-height:28px;margin-right:10px;vertical-align:middle}
+.art-cta{background:var(--mg);padding:60px;text-align:center;margin-top:0}
+.art-cta h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:400;color:var(--wh);margin-bottom:10px}
+.art-cta p{font-family:'Crimson Pro',serif;color:var(--crw);opacity:.85;margin-bottom:28px;font-size:1rem}
+.art-cta a{display:inline-flex;align-items:center;gap:8px;background:var(--go);color:var(--mgp);font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;letter-spacing:.08em;padding:13px 28px;text-decoration:none;border-radius:2px;transition:all .3s}
+.art-cta a:hover{background:var(--gol);transform:translateY(-2px)}
+footer{background:var(--ink);padding:32px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer p{font-family:'Crimson Pro',serif;font-size:.82rem;color:var(--pa);opacity:.4}
+footer span{font-family:'Scheherazade New',serif;font-size:1rem;color:var(--gol);opacity:.35}
+@media(max-width:768px){nav,footer{padding:12px 16px}.art-hero{padding:50px 16px 40px}.art-body{padding:50px 16px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nlogo">
+    <div class="nlogo-wrap">
+      <img src="" alt="Càngaay Li"/>
+      <div class="nlt">
+        <span class="nm">Càngaay Li</span>
+        <span class="tg">Un Retour Dans La Dignité</span>
+      </div>
+    </div>
+  </a>
+  <a href="blog.html" class="back-btn">&#8592; Tous les articles</a>
+</nav>
+
+<div class="art-hero">
+  <div class="art-hero-inner">
+    <p class="art-tag">Communauté</p>
+    <h1 class="art-title">Former 100 femmes d'ici 2026 : notre défi</h1>
+    <div class="art-divider"></div>
+    <p class="art-intro">Depuis sa fondation, Càngaay Li a un objectif clair : former 100 femmes au rite funéraire islamique d'ici 2026. Voici pourquoi ce chiffre compte, et comment votre soutien rend cela possible.</p>
+    <p class="art-meta">Càngaay Li · Communauté · Thiès, Sénégal</p>
+  </div>
+</div>
+
+<div class="art-body">
+
+<h2>Pourquoi 100 femmes ?</h2>
+<p>Au Sénégal, dans de nombreux quartiers et villages, il n'existe aucune femme formée au lavage mortuaire islamique. Lorsqu'une sœur décède, la famille se retrouve démunie, cherchant en urgence quelqu'un qui sait accomplir ce rite avec dignité et conformité à la Sunna.</p>
+<p>100 femmes formées, réparties à travers le pays, c'est 100 communautés qui ne seront plus jamais dans cette situation. C'est 100 familles qui pourront accompagner leurs proches dans la dignité, peu importe l'heure, peu importe l'endroit.</p>
+
+<h2>Où en sommes-nous ?</h2>
+<p>Càngaay Li a commencé ses premières formations à Thiès. Chaque session accueille un groupe de femmes qui apprennent le <em>ghusl</em>, la mise en linceul et les rites funéraires islamiques sur plusieurs jours, en théorie et en pratique.</p>
+<p>L'objectif de 100 femmes formées d'ici fin 2026 est ambitieux mais réalisable, à condition que les ressources nécessaires soient réunies.</p>
+
+<h2>Ce que coûte une formation</h2>
+<p>Chaque formation est <strong>entièrement gratuite pour les participantes</strong>. Càngaay Li prend en charge les supports pédagogiques, le matériel pratique, et dans certains cas les frais de déplacement pour les femmes venant de loin.</p>
+<p>C'est votre don qui finance tout cela. Chaque contribution, petite ou grande, permet à une femme de plus d'acquérir ce savoir sacré et de le transmettre à son tour à sa communauté.</p>
+
+<blockquote>"Former une femme, c'est former une communauté. Ce savoir ne meurt pas avec elle — il se transmet, de mains en mains, de génération en génération."</blockquote>
+
+<h2>Comment vous pouvez aider</h2>
+<p>Si vous souhaitez soutenir cet objectif, plusieurs options s'offrent à vous : faire un don financier via RIB, PayPal, Wave ou Orange Money, partager notre mission autour de vous, ou proposer des femmes de votre entourage qui souhaiteraient se former.</p>
+<p>Ensemble, nous pouvons faire en sorte qu'aucune famille sénégalaise ne soit plus jamais démunie face à la mort d'une sœur.</p>
+
+</div>
+
+<div class="art-cta">
+  <h3>Rejoignez la mission Cangaay Li</h3>
+  <p>Formez-vous, soutenez-nous, ou commandez un Pack Essentiel pour votre famille ou mosquee.</p>
+  <a href="index.html#donate">Soutenir Cangaay Li</a>
+</div>
+<footer>
+  <p>2024 Cangaay Li · Thies, Senegal · Organisation a but non lucratif</p>
+  <span>&#1573;&#1616;&#1606;&#1617;&#1614;&#1575; &#1604;&#1616;&#1604;&#1617;&#1614;&#1607;&#1616; &#1608;&#1614;&#1573;&#1616;&#1606;&#1617;&#1614;&#1575; &#1573;&#1616;&#1604;&#1614;&#1610;&#1618;&#1607;&#1616; &#1585;&#1614;&#1575;&#1580;&#1616;&#1593;&#1615;&#1608;&#1606;&#1614;</span>
+</footer>
+</body>
+</html>
