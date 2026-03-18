@@ -2,10 +2,16 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
+# Editorial workflow: Draft -> In Review -> Ready -> Published
+publish_mode: editorial_workflow
+
+media_folder: "cangaay-site/images/uploads"
 public_folder: "images/uploads"
 
 locale: fr
+
+# Custom branding
+logo_url: https://unrivaled-raindrop-b4216b.netlify.app/images/logo.png
 
 collections:
   - name: "articles"
@@ -20,11 +26,13 @@ collections:
       - label: "Titre"
         name: "title"
         widget: "string"
+        required: true
         hint: "Le titre complet de l'article"
 
       - label: "Tag / Catégorie"
         name: "tag"
         widget: "select"
+        required: true
         options:
           - { label: "Dossier Principal", value: "Dossier Principal" }
           - { label: "Rappel", value: "Rappel" }
@@ -52,7 +60,17 @@ collections:
       - label: "Résumé"
         name: "excerpt"
         widget: "text"
+        required: true
         hint: "Une ou deux phrases résumant l'article (affiché sur la page blog)"
+
+      - label: "Image à la une"
+        name: "featuredImage"
+        widget: "image"
+        required: false
+        hint: "Photo d'illustration de l'article (optionnel)"
+        media_library:
+          config:
+            multiple: false
 
       - label: "Date de publication"
         name: "date"
@@ -70,8 +88,8 @@ collections:
       - label: "Publié"
         name: "published"
         widget: "boolean"
-        default: true
-        hint: "Décochez pour garder l'article en brouillon"
+        default: false
+        hint: "Activez uniquement quand l'article est prêt à être publié"
 
       - label: "Contenu"
         name: "body"
