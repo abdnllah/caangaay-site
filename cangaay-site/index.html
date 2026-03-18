@@ -222,6 +222,7 @@ footer{background:var(--ink);padding:50px 60px 24px;color:var(--pa)}
 .js-ready .fu{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
 .js-ready .fu.vis{opacity:1;transform:none}
 </style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -609,6 +610,18 @@ document.querySelector('.nws-form button').addEventListener('click',function(){
     setTimeout(()=>{this.textContent="S'inscrire";this.style.background='';},3000);
   }
 });
+</script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", function(user) {
+    if (!user) {
+      window.netlifyIdentity.on("login", function() {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+  window.netlifyIdentity.init();
+}
 </script>
 </body>
 </html>
