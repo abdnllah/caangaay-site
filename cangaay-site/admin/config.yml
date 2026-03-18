@@ -15,7 +15,6 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    preview_path: "blog.html"
     summary: "{{title}} — {{date}}"
     fields:
       - label: "Titre"
@@ -77,4 +76,4 @@ collections:
       - label: "Contenu"
         name: "body"
         widget: "markdown"
-        hint: "Le contenu complet de l'article. Utilisez ## pour les titres, **gras**, *italique*."
+        hint: "Le contenu complet de l'article."
